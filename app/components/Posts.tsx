@@ -3,6 +3,7 @@ import ListItem from "./ListItem"
 
 export default async function Posts() {
     const posts = await getPostMeta()
+    console.log(posts);
     if (!posts) {
         return <p className="mt-10 text-center" >Sorry, no post available.</p>
     }
